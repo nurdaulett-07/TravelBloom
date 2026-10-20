@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - TravelBloom</title>
+  <link rel="stylesheet" href="./travel.css">
+</head>
+<body>
+  <nav>
+    <h1>TravelBloom</h1>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./contact.html">Contact Us</a></li>
+      <li><input type="text" id="searchInput" placeholder="Search destinations"></li>
+      <li><button id="btnSearch">Search</button></li>
+      <li><button id="btnClear">Clear</button></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <h2>Contact Us</h2>
+    <p>Have a question about a destination or need help planning your trip? Write to us!</p>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> info@travelbloom.example</p>
+      <p><strong>Phone:</strong> +1 234 567 890</p>
+      <p><strong>Address:</strong> 123 Travel Street, Sydney, Australia</p>
+      <p><strong>Working hours:</strong> Mon-Fri, 9:00-18:00</p>
+    </div>
+
+    <h3>Send us a message</h3>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="./travel.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for contacting us! We will reply to your email soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

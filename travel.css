@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; }
+
+nav { display: flex; justify-content: space-between; align-items: center;
+      background: #0b3c5d; color: #fff; padding: 10px 20px; flex-wrap: wrap; }
+nav ul { list-style: none; display: flex; gap: 12px; align-items: center; margin: 0; padding: 0; }
+nav a { color: #fff; text-decoration: none; }
+nav input { padding: 6px; }
+nav button { padding: 6px 12px; border: 0; background: #1ca9c9; color: #fff; cursor: pointer; }
+
+.hero { min-height: 70vh; display: flex; align-items: center;
+        background: url('images/hero.jpg') center/cover no-repeat; color: #fff; }
+.hero-text { background: rgba(0,0,0,.45); padding: 30px; margin-left: 40px; max-width: 520px; }
+.book { padding: 10px 24px; background: #ff7f50; color: #fff; border: 0; cursor: pointer; }
+.social a { color: #fff; margin-right: 12px; }
+
+#results { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; }
+.card { width: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #fff; }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card h3, .card p { margin: 10px; }
+
+.page { max-width: 700px; margin: 30px auto; padding: 0 20px; }
+.page form input, .page form textarea { width: 100%; margin-bottom: 12px; padding: 8px; }
+.page { max-width: 800px; margin: 30px auto; padding: 0 20px; line-height: 1.6; }
+.page h2 { color: #0b3c5d; border-bottom: 2px solid #1ca9c9; padding-bottom: 6px; }
+.page h3 { color: #0b3c5d; margin-top: 24px; }
+.page ul { padding-left: 20px; }
+.page form label { display: block; margin: 12px 0 4px; font-weight: bold; }
+.page form input, .page form textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+.page form button { margin-top: 14px; padding: 10px 24px; background: #1ca9c9; color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+.page form button:hover { background: #0b3c5d; }
+.contact-info { background: #f2f8fb; padding: 14px 18px; border-radius: 6px; }
